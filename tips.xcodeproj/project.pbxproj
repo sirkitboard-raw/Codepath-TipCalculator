@@ -14,6 +14,7 @@
 		403AB9D21C5A670900D46FA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 403AB9D01C5A670900D46FA2 /* LaunchScreen.storyboard */; };
 		403AB9DD1C5A670900D46FA2 /* tipsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403AB9DC1C5A670900D46FA2 /* tipsTests.swift */; };
 		403AB9E81C5A670900D46FA2 /* tipsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403AB9E71C5A670900D46FA2 /* tipsUITests.swift */; };
+		403AB9FA1C5A7DA800D46FA2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403AB9F91C5A7DA800D46FA2 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		403AB9E31C5A670900D46FA2 /* tipsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tipsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		403AB9E71C5A670900D46FA2 /* tipsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipsUITests.swift; sourceTree = "<group>"; };
 		403AB9E91C5A670900D46FA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		403AB9F91C5A7DA800D46FA2 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				403AB9CE1C5A670900D46FA2 /* Assets.xcassets */,
 				403AB9D01C5A670900D46FA2 /* LaunchScreen.storyboard */,
 				403AB9D31C5A670900D46FA2 /* Info.plist */,
+				403AB9F91C5A7DA800D46FA2 /* SettingsViewController.swift */,
 			);
 			path = tips;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			files = (
 				403AB9CA1C5A670900D46FA2 /* ViewController.swift in Sources */,
 				403AB9C81C5A670900D46FA2 /* AppDelegate.swift in Sources */,
+				403AB9FA1C5A7DA800D46FA2 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
