@@ -4,4 +4,4 @@
 
 ### Tip Calculator
 
-~[prework.gif](Hi)
+![Hi](prework.gif)
