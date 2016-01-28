@@ -18,13 +18,15 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var TipControlRadio: UISegmentedControl!
     
+    let defaults = NSUserDefaults.standardUserDefaults()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         TipLabel.text = "$0.00"
         TotalLabel.text = "$0.00"
         
-        let defaults = NSUserDefaults.standardUserDefaults()
+
         let defaultTip = defaults.integerForKey("defaultTip")
         
         TipControlRadio.selectedSegmentIndex = defaultTip
@@ -33,9 +35,18 @@ class ViewController: UIViewController {
     }
 
     @IBAction func onEditChanged(sender: AnyObject) {
+        updateValues()
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    func updateValues() {
         let tipPercentages = [0.18, 0.2, 0.22]
-//        print(tipPercentages[0])
-//        print(TipPercentRadio)
+        //        print(tipPercentages[0])
+        //        print(TipPercentRadio)
         
         let tipPercentage = tipPercentages[TipControlRadio.selectedSegmentIndex]
         
@@ -46,20 +57,16 @@ class ViewController: UIViewController {
         
         TipLabel.text = String(format: "$%.2f", tip)
         TotalLabel.text = String(format: "$%.2f", total)
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
     }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidDisappear(animated)
         
-        let defaults = NSUserDefaults.standardUserDefaults()
         let defaultTip = defaults.integerForKey("defaultTip")
         
         TipControlRadio.selectedSegmentIndex = defaultTip
+        updateValues()
     }
 
 
